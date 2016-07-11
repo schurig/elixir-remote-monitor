@@ -10,7 +10,7 @@ Add `remote_monitor` to your list of dependencies in `mix.exs`:
 
   ```elixir
   def deps do
-    [{:remote_monitor, "~> 0.1.0"}]
+    [{:remote_monitor, "~> 0.1.0", only: :dev}]
   end
   ```
 
