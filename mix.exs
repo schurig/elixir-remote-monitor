@@ -32,7 +32,7 @@ defmodule RemoteMonitor.Mixfile do
     [
       {:sshex, "2.1.0"},
       {:credo, "~> 0.4.5", only: [:dev, :test]},
-      {:inch_ex, only: :docs}
+      {:inch_ex, only: [:dev, :test, :docs]}
     ]
   end
 

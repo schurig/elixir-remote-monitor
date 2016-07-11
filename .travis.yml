@@ -10,6 +10,8 @@ otp_release:
   - 18.2
   - 19.0
 after_script:
+  - mix deps.get --only docs
+  - mix deps.get --only test
   - MIX_ENV=test mix inch.report
   - MIX_ENV=docs mix deps.get
   - MIX_ENV=docs mix inch.report
