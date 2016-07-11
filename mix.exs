@@ -10,7 +10,8 @@ defmodule RemoteMonitor.Mixfile do
      deps: deps(),
      name: "elixir-remote-monitor",
      description: "A Mix task that helps you to observe your remote elixir nodes from your local machine.",
-     package: package()
+     package: package(),
+     aliases: aliases()
     ]
   end
 
@@ -28,6 +29,15 @@ defmodule RemoteMonitor.Mixfile do
   end
 
   defp deps do
-    [{:sshex, "2.1.0"}]
+    [
+      {:sshex, "2.1.0"},
+      {:credo, "~> 0.4.5", only: [:dev, :test]}
+    ]
+  end
+
+  defp aliases do
+    [
+      # "credo": ["credo --strict"]
+    ]
   end
 end
