@@ -1,4 +1,5 @@
-# Elixir Remote Monitor
+# Elixir Remote Monitor [![Inline docs](http://inch-ci.org/github/schurig/elixir-remote-monitor.svg)](http://inch-ci.org/github/schurig/elixir-remote-monitor) [![Deps Status](https://beta.hexfaktor.org/badge/all/github/schurig/elixir-remote-monitor.svg)](https://beta.hexfaktor.org/github/schurig/elixir-remote-monitor) [![Deps Status](https://beta.hexfaktor.org/badge/prod/github/schurig/elixir-remote-monitor.svg)](https://beta.hexfaktor.org/github/schurig/elixir-remote-monitor)
+
 
 A Mix task that helps you to observe your remote elixir nodes from your local machine.
 
