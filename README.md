@@ -2,7 +2,7 @@
 
 A Mix task that helps you to observe your remote elixir nodes from your local machine.
 
-It finds out the ports your remote Elixir node is running on, binds them to your local machine and start the erlang observer for you.
+It finds out the ports your remote Elixir node is running on, binds them to your local machine and starts the erlang observer for you.
 
 ## Installation
 
