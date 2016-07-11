@@ -17,7 +17,7 @@ defmodule RemoteMonitor.Mixfile do
 
   defp package do
     [
-      files: ["lib", "mix.exs", "README.md", "LICENSE*"],
+      files: ["lib", "mix.exs", "README.md", "LICENSE*", "CHANGELOG.md"],
       maintainers: ["Martin Schurig"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/schurig/elixir-remote-monitor"},
