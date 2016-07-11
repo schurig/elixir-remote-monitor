@@ -1,0 +1,2 @@
+defmodule RemoteMonitor do
+end
