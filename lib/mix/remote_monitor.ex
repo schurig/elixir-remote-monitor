@@ -6,7 +6,7 @@ defmodule Mix.Tasks.RemoteMonitor do
     [user, host] = String.split(remote, "@")
 
     :ssh.start
-    case SSHEx.connect(ip: to_charlist(host), user: to_charlist(user)) do
+    case SSHEx.connect(ip: String.to_charlist(host), user: String.to_charlist(user)) do
       {:ok, conn} -> observe!(conn, "#{user}@#{host}", app_cookie)
       {:error, reason} -> throw reason
     end
