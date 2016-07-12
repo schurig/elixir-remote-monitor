@@ -1,8 +1,12 @@
 # Changelog
 
+## 0.1.2
+
+* Fix error complaining about `to_charlist/1 not found`
+
 ## 0.1.1
 
-Doesn't require Elixir 1.3 any longer
+* Doesn't require Elixir 1.3 any longer
 
 ## 0.1.0
 
