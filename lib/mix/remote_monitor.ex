@@ -29,21 +29,37 @@ defmodule Mix.Tasks.RemoteMonitor do
   end
 
   defp clean_up!(app_port, epmd_port) do
-    Mix.shell.info("# Cleaning up old tunnels..")
+    [:dimgray, "# Cleaning up old tunnels.."]
+    |> Bunt.puts
+
     Mix.shell.cmd("lsof -wni tcp:#{app_port} -t | xargs kill -9")
     Mix.shell.cmd("lsof -wni tcp:#{epmd_port} -t | xargs kill -9")
   end
 
   defp start_tunnel!(remote_host, app_port, epmd_port) do
     spawn(fn ->
-      Mix.shell.info("# Setting up SSH tunnel..")
+      [:dimgray, "# Setting up SSH tunnel.."]
+      |> Bunt.puts
+
       Mix.shell.cmd("ssh -L #{app_port}:localhost:#{app_port} -L #{epmd_port}:localhost:#{epmd_port} #{remote_host} -f -N")
     end)
   end
 
   defp start_observer!(erlang_cookie) do
-    Mix.shell.info("# Starting observer..")
-    Mix.shell.info("\n\n==> Connect to node \"#{erlang_cookie}@127.0.0.1\" by using the UI\n\n")
+    [:dimgray, "# Starting observer.."]
+    |> Bunt.puts
+
+    ["\n\n", :red, :bright, "Instructions"]
+    |> Bunt.puts
+
+    [:darkred, "1. Connect to node \"#{erlang_cookie}@127.0.0.1\" by using the UI"]
+    |> Bunt.puts
+    [:darkred, "2. 😊", "\n\n"]
+    |> Bunt.puts
+
+    [:dimgray, "Issues & Feature requests: github.com/schurig/elixir-remote-monitor/issues/new", "\n"]
+    |> Bunt.puts
+
     Mix.shell.cmd("erl -name debug@127.0.0.1 -setcookie #{erlang_cookie} -run observer")
   end
 end
