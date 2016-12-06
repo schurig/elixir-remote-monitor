@@ -1,5 +1,5 @@
-%{"bunt": {:hex, :bunt, "0.1.6", "5d95a6882f73f3b9969fdfd1953798046664e6f77ec4e486e6fafc7caad97c6f", [:mix], []},
-  "credo": {:hex, :credo, "0.4.5", "5c5daaf50a2a96068c0f21b6fbd382d206702efa8836a946eeab0b8ac25f5f22", [:mix], [{:bunt, "~> 0.1.6", [hex: :bunt, optional: false]}]},
-  "inch_ex": {:hex, :inch_ex, "0.5.3", "39f11e96181ab7edc9c508a836b33b5d9a8ec0859f56886852db3d5708889ae7", [:mix], [{:poison, "~> 1.5 or ~> 2.0", [hex: :poison, optional: false]}]},
-  "poison": {:hex, :poison, "2.2.0", "4763b69a8a77bd77d26f477d196428b741261a761257ff1cf92753a0d4d24a63", [:mix], []},
-  "sshex": {:hex, :sshex, "2.1.0", "943489f576978db0936d9714966bf06e615550c7b787492ce7a0bd4469c0ac7f", [:mix], []}}
+%{"bunt": {:hex, :bunt, "0.1.6", "5d95a6882f73f3b9969fdfd1953798046664e6f77ec4e486e6fafc7caad97c6f", [], []},
+  "credo": {:hex, :credo, "0.4.14", "594a965ae2224997fae9e705e881983911a052c701b05bd3bcf89af44b5f6b45", [:mix], [{:bunt, "~> 0.1.6", [hex: :bunt, optional: false]}]},
+  "inch_ex": {:hex, :inch_ex, "0.5.5", "b63f57e281467bd3456461525fdbc9e158c8edbe603da6e3e4671befde796a3d", [:mix], [{:poison, "~> 1.5 or ~> 2.0 or ~> 3.0", [hex: :poison, optional: false]}]},
+  "poison": {:hex, :poison, "3.0.0", "625ebd64d33ae2e65201c2c14d6c85c27cc8b68f2d0dd37828fde9c6920dd131", [:mix], []},
+  "sshex": {:hex, :sshex, "2.1.0", "943489f576978db0936d9714966bf06e615550c7b787492ce7a0bd4469c0ac7f", [], []}}
