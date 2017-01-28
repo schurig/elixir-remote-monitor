@@ -33,6 +33,7 @@ defmodule RemoteMonitor.Mixfile do
       {:sshex, "2.1.0"},
       {:bunt, "~> 0.2.0"},
       {:credo, "~> 0.6.0", only: [:dev, :test]},
+      {:ex_doc, ">= 0.0.0", only: :dev},
       {:inch_ex, "~> 0.5.3", only: [:dev, :test, :docs]}
     ]
   end
