@@ -31,7 +31,7 @@ defmodule RemoteMonitor.Mixfile do
   defp deps do
     [
       {:sshex, "2.1.0"},
-      {:bunt, "~> 0.2.0", override: true},
+      {:bunt, "~> 0.2.0"},
       {:credo, "~> 0.6.0", only: [:dev, :test]},
       {:inch_ex, "~> 0.5.3", only: [:dev, :test, :docs]}
     ]
