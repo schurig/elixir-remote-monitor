@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0
+
+* Require elixir 1.3 or higher (issue #3)
+* Update credo dependency
+
 ## 0.2.0
 
 * Using [bunt](https://github.com/rrrene/bunt) for colorful instructions

@@ -3,8 +3,8 @@ defmodule RemoteMonitor.Mixfile do
 
   def project do
     [app: :remote_monitor,
-     version: "0.2.0",
-     elixir: "~> 1.1",
+     version: "1.0.0",
+     elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
@@ -32,7 +32,7 @@ defmodule RemoteMonitor.Mixfile do
     [
       {:sshex, "2.1.0"},
       {:bunt, "~> 0.2.0", override: true},
-      {:credo, "~> 0.5.3", only: [:dev, :test]},
+      {:credo, "~> 0.6.0", only: [:dev, :test]},
       {:inch_ex, "~> 0.5.3", only: [:dev, :test, :docs]}
     ]
   end
